@@ -72,5 +72,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "# Run development Mode `$ npm start`",
+  "main": "jest.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmarLandi/reactScaffolding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OmarLandi/reactScaffolding/issues"
+  },
+  "homepage": "https://github.com/OmarLandi/reactScaffolding#readme"
 }
