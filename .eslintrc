@@ -1,0 +1,51 @@
+{
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["app", "./src/app"],
+          ["components", "./src/common/components"],
+          ["containers", "./src/common/containers"],
+          ["layouts", "./src/common/layouts"],
+          ["assets", "./src/assets"],
+          ["config", "./src/config"],
+          ["redux", "./src/redux"],
+          ["utils", "./src/utils"],
+          ["router", "./src/router"]
+        ]
+      }
+    }
+  },
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "allowImportExportEverywhere": false,
+    "codeFrame": false
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "max-len": ["error", {"code": 100}],
+    "prefer-promise-reject-errors": ["off"],
+    "react/jsx-filename-extension": ["off"],
+    "react/prop-types": ["warn"],
+    "no-return-assign": ["off"]
+  }
+}
